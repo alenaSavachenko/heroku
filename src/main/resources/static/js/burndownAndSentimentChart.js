@@ -4,7 +4,7 @@ Chart.defaults.global.defaultFontColor = '#858796';
 
 //Send HTTP request
 const Http = new XMLHttpRequest();
-const url = 'http://localhost:8080/burndowndata';
+const url = 'https://mighty-headland-04378.herokuapp.com/burndowndata';
 Http.open("GET", url);
 Http.send();
 
@@ -17,7 +17,7 @@ function updateBurndownSentiment() {
 
     //Send HTTP request
     const Http = new XMLHttpRequest();
-    const url = 'http://localhost:8080/sentimentdailychart';
+    const url = 'https://mighty-headland-04378.herokuapp.com/sentimentdailychart';
     Http.open("GET", url);
     Http.send();
 

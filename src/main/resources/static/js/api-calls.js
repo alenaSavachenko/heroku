@@ -1,7 +1,7 @@
 function getSentimentData() {
 //Send HTTP request
     const Http2 = new XMLHttpRequest();
-    const url2 = 'http://localhost:8080/sentimentdata';
+    const url2 = 'https://mighty-headland-04378.herokuapp.com/sentimentdata';
     Http2.open("GET", url2);
     Http2.send();
 
@@ -25,7 +25,7 @@ function getSentimentData() {
 function getProjectSummary(){
     //Send HTTP request
     const Http = new XMLHttpRequest();
-    const url = 'http://localhost:8080/projectsummary';
+    const url = 'https://mighty-headland-04378.herokuapp.com/projectsummary';
     Http.open("GET", url);
     Http.send();
 

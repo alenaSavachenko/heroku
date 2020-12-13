@@ -4,7 +4,7 @@
 
 refreshProjectSummaryTable();
 const HttpUpdates = new XMLHttpRequest();
-const urlUpdates = 'http://localhost:8080/getUpdatedTasks';
+const urlUpdates = 'https://mighty-headland-04378.herokuapp.com/getUpdatedTasks';
 HttpUpdates.open("GET", urlUpdates );
 HttpUpdates.send();
 
@@ -84,7 +84,7 @@ function refreshProjectSummaryTable()
         var requestRefresh=new XMLHttpRequest();
         console.log("updates:");
         console.log(updates[i]);
-        var requestUpdateUri="http://localhost:8080/updateProjectSummary?status="+updates[i];
+        var requestUpdateUri="https://mighty-headland-04378.herokuapp.com/updateProjectSummary?status="+updates[i];
         requestRefresh.open("GET", requestUpdateUri);
         requestRefresh.send();
 

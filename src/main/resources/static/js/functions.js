@@ -1,7 +1,7 @@
 function voteSentiment(vote){
     //Send HTTP request
     const Http = new XMLHttpRequest();
-    const url = 'http://localhost:8080/sentimentdata/' + vote;
+    const url = 'https://mighty-headland-04378.herokuapp.com/sentimentdata/' + vote;
     Http.open("POST", url);
     Http.send();
 

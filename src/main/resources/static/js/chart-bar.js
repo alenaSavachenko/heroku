@@ -29,7 +29,7 @@ function number_format(number, decimals, dec_point, thousands_sep) {
 
 //Send HTTP request
 const Http3 = new XMLHttpRequest();
-const url3 = 'http://localhost:8080/topcontributordata';
+const url3 = 'https://mighty-headland-04378.herokuapp.com/topcontributordata';
 Http3.open("GET", url3);
 Http3.send();
 

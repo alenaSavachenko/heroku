@@ -43,7 +43,7 @@ public class IssueController {
     }
 
     // update the table in project_summary_data,
-    // use request like this : http://localhost:8080/updateProjectSummary?status=testing
+    // use request like this : https://mighty-headland-04378.herokuapp.com/updateProjectSummary?status=testing
     @RequestMapping("/updateProjectSummary")
     String update (@RequestParam ("status") String status)
     {

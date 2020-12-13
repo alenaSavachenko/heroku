@@ -22,7 +22,7 @@ public class JiraController {
     {
         // replace whitespace with %20, according to syntax of Rest Api Jira
         //for calls use like this
-        // http://localhost:8080/statisticsMethod?project=testProject&task=PRODUCT BACKLOG
+        // https://mighty-headland-04378.herokuapp.com/statisticsMethod?project=testProject&task=PRODUCT BACKLOG
 
         String replacedTaskName=taskName.replace(" ", "%20");
 

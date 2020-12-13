@@ -4,7 +4,7 @@
 function refresh(){
     //Send HTTP request
     const Http = new XMLHttpRequest();
-    const url = 'http://localhost:8080/refresh';
+    const url = 'https://mighty-headland-04378.herokuapp.com/refresh';
     Http.open("GET", url);
     Http.send();
 
