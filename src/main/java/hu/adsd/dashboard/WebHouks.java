@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class WebHouks {
 
-    @GetMapping (value = "/rest/webhooks/webhook1",consumes = "application/json", produces = "application/json")
+    @GetMapping (value = "/rest/webhooks/webhook1")
     @ResponseBody
     public String respondToPhoneCall(){
         return "Welcome to Spring Boot";
