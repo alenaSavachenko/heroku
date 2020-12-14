@@ -16,4 +16,10 @@ public class WebHouks {
     }
 
 
+    @PostMapping (value = "/rest/webhooks/webhook1")
+    @ResponseBody
+    public String postrespondToPhoneCall(){
+        
+    }
+
 }
